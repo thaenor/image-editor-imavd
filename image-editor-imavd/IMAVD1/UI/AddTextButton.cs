@@ -11,7 +11,7 @@ namespace IMAVD1.UI
         {
             this.Click += new EventHandler(button_Click);
             this.form = form;
-            this.BackgroundImage = IMAVD1.Properties.Resources.text_icon;
+            this.BackgroundImage = IMAVD1.Properties.Resources.text;
             this.BackgroundImageLayout = ImageLayout.Zoom;
             setToolTip("Add text to image");
         }

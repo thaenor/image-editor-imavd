@@ -16,7 +16,7 @@ namespace IMAVD1
         {
             this.Click += new EventHandler(button_Click);
             this.form = form;
-            this.BackgroundImage = IMAVD1.Properties.Resources.invert_colors_icon;
+            this.BackgroundImage = IMAVD1.Properties.Resources.invert_color;
             this.BackgroundImageLayout = ImageLayout.Zoom;
             setToolTip("Invert colors of image");
         }

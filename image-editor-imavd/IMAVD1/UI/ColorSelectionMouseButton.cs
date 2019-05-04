@@ -11,7 +11,7 @@ namespace IMAVD1
         {
             this.Click += new EventHandler(button_Click);
             this.form = form;
-            this.BackgroundImage = Properties.Resources.color_dropper_icon;
+            this.BackgroundImage = Properties.Resources.color_counter;
             this.BackgroundImageLayout = ImageLayout.Zoom;
             setToolTip("Select color with mouse");
         }

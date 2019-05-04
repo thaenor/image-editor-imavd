@@ -18,7 +18,7 @@ namespace IMAVD1.UI
         {
             this.Click += new EventHandler(button_Click);
             this.form = form;
-            this.BackgroundImage = IMAVD1.Properties.Resources.two_areas_icon;
+            this.BackgroundImage = IMAVD1.Properties.Resources.two_areas;
             BackgroundImageLayout = ImageLayout.Zoom;
             setToolTip("Two area crop");
         }

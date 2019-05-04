@@ -12,7 +12,7 @@ namespace IMAVD1
         {
             this.Click += new EventHandler(button_Click);
             this.form = form;
-            this.BackgroundImage = IMAVD1.Properties.Resources.gamma_icon;
+            this.BackgroundImage = IMAVD1.Properties.Resources.gamma;
             this.BackgroundImageLayout = ImageLayout.Zoom;
             setToolTip("Change gamma");
         }

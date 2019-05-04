@@ -18,7 +18,7 @@ namespace IMAVD1.UI
         {
             this.Click += new EventHandler(button_Click);
             this.form = form;
-            this.BackgroundImage = IMAVD1.Properties.Resources.four_areas_icon;
+            this.BackgroundImage = IMAVD1.Properties.Resources.four_areas;
             BackgroundImageLayout = ImageLayout.Zoom;
             setToolTip("Four area crop");
         }

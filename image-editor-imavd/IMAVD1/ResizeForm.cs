@@ -18,17 +18,7 @@ namespace IMAVD1
             this.numericUpDownW.Value = this.mainForm.imgPicBox.Width;
            
         }
-
-        private void okResizeBtn_Click(object sender, EventArgs e)
-        {
-
-            Image newImage = resize(this.mainForm.imgPicBox.Image, (int)numericUpDownW.Value, (int)numericUpDownH.Value);
-            this.mainForm.imgPicBox.Height = (int)numericUpDownH.Value;
-            this.mainForm.imgPicBox.Width = (int)numericUpDownW.Value;
-            this.mainForm.imgPicBox.Image = newImage;
-            this.Close();
-        }
-
+        
         private Image resize(Image img, int iWidth, int iHeight)
         {
             Bitmap bmp = new Bitmap(iWidth, iHeight);
@@ -38,7 +28,16 @@ namespace IMAVD1
             return (Image)bmp;
         }
 
-        private void cancelResizeBtn_Click(object sender, EventArgs e)
+        private void metroButtonOk_Click(object sender, EventArgs e)
+        {
+            Image newImage = resize(this.mainForm.imgPicBox.Image, (int)numericUpDownW.Value, (int)numericUpDownH.Value);
+            this.mainForm.imgPicBox.Height = (int)numericUpDownH.Value;
+            this.mainForm.imgPicBox.Width = (int)numericUpDownW.Value;
+            this.mainForm.imgPicBox.Image = newImage;
+            this.Close();
+        }
+
+        private void metroButtonCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }

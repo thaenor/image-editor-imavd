@@ -11,7 +11,7 @@ namespace IMAVD1
         {
             this.Click += new EventHandler(button_Click);
             this.form = form;
-            this.BackgroundImage = IMAVD1.Properties.Resources.colors_wheel;
+            this.BackgroundImage = IMAVD1.Properties.Resources.color_wheel;
             BackgroundImageLayout = ImageLayout.Zoom;
             setToolTip("Select color with picker");
         }

@@ -11,7 +11,7 @@ namespace IMAVD1
         {
             this.Click += new EventHandler(button_Click);
             this.form = form;
-            this.BackgroundImage = IMAVD1.Properties.Resources.rotate_horizontal_icon;
+            this.BackgroundImage = IMAVD1.Properties.Resources.flip_horizonta;
             this.BackgroundImageLayout = ImageLayout.Zoom;
             setToolTip("Flip the image horizontally");
         }

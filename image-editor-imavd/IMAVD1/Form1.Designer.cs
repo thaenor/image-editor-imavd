@@ -29,11 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.diagonalCropGroupBox = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.diagonalPicBox2 = new System.Windows.Forms.PictureBox();
             this.diagonalPicBox1 = new System.Windows.Forms.PictureBox();
+            this.toolsPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.fourAreasGoupBox = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.fourAreaPicBox4 = new System.Windows.Forms.PictureBox();
+            this.fourAreaPicBox3 = new System.Windows.Forms.PictureBox();
+            this.fourAreaPicBox2 = new System.Windows.Forms.PictureBox();
+            this.fourAreaPicBox1 = new System.Windows.Forms.PictureBox();
             this.patternGroupBox = new System.Windows.Forms.GroupBox();
             this.cancelPatternButton = new System.Windows.Forms.Button();
             this.applyPatternButton = new System.Windows.Forms.Button();
@@ -41,12 +49,12 @@
             this.rowsInput = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.fourAreasGoupBox = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.fourAreaPicBox4 = new System.Windows.Forms.PictureBox();
-            this.fourAreaPicBox3 = new System.Windows.Forms.PictureBox();
-            this.fourAreaPicBox2 = new System.Windows.Forms.PictureBox();
-            this.fourAreaPicBox1 = new System.Windows.Forms.PictureBox();
+            this.valuePickerPanel = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.applyButton = new System.Windows.Forms.Button();
+            this.maxLabel = new System.Windows.Forms.Label();
+            this.minLabel = new System.Windows.Forms.Label();
+            this.valueNameLabel = new System.Windows.Forms.Label();
             this.textGroupBox = new System.Windows.Forms.GroupBox();
             this.cancelTextBtn = new System.Windows.Forms.Button();
             this.applyTextBtn = new System.Windows.Forms.Button();
@@ -60,6 +68,10 @@
             this.fontNameLbl = new System.Windows.Forms.Label();
             this.fontLbl = new System.Windows.Forms.Label();
             this.textBox = new System.Windows.Forms.TextBox();
+            this.twoAreasGroupBox = new System.Windows.Forms.GroupBox();
+            this.twoAreaPicBox1 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.twoAreaPicBox2 = new System.Windows.Forms.PictureBox();
             this.graphicsGroupBox = new System.Windows.Forms.GroupBox();
             this.cancelGraphicsBtn = new System.Windows.Forms.Button();
             this.applyGraphicsBtn = new System.Windows.Forms.Button();
@@ -76,17 +88,6 @@
             this.graphicsImageName = new System.Windows.Forms.Label();
             this.loadGraphicsImageBtn = new System.Windows.Forms.Button();
             this.graphicsPicBox = new System.Windows.Forms.PictureBox();
-            this.valuePickerPanel = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.applyButton = new System.Windows.Forms.Button();
-            this.maxLabel = new System.Windows.Forms.Label();
-            this.minLabel = new System.Windows.Forms.Label();
-            this.valueNameLabel = new System.Windows.Forms.Label();
-            this.toolsPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.twoAreasGroupBox = new System.Windows.Forms.GroupBox();
-            this.twoAreaPicBox1 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.twoAreaPicBox2 = new System.Windows.Forms.PictureBox();
             this.zoomLabel = new System.Windows.Forms.Label();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
@@ -95,6 +96,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.imgPicBox = new System.Windows.Forms.PictureBox();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.colorCombo = new MetroFramework.Controls.MetroComboBox();
             this.themeCombo = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
@@ -106,7 +108,6 @@
             this.toolStripMenuItemSave = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemExit = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
-            this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroContextMenuEdit = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.toolStripMenuItemUndo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemRedo = new System.Windows.Forms.ToolStripMenuItem();
@@ -132,31 +133,28 @@
             this.zoom400toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoom500toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.metroContextMenuView = new MetroFramework.Controls.MetroContextMenu(this.components);
-            this.toolStripMenuItemZoom = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem50 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem100 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem150 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem200 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem400 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem500 = new System.Windows.Forms.ToolStripMenuItem();
             this.appStyle = new MetroFramework.Components.MetroStyleManager(this.components);
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.panel1.SuspendLayout();
             this.diagonalCropGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.diagonalPicBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diagonalPicBox1)).BeginInit();
-            this.patternGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.columnsInput)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rowsInput)).BeginInit();
             this.fourAreasGoupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox1)).BeginInit();
+            this.patternGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.columnsInput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rowsInput)).BeginInit();
+            this.valuePickerPanel.SuspendLayout();
             this.textGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fontXUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fontYUpDown)).BeginInit();
+            this.twoAreasGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox2)).BeginInit();
             this.graphicsGroupBox.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownW)).BeginInit();
@@ -165,10 +163,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.graphicsPicBox)).BeginInit();
-            this.valuePickerPanel.SuspendLayout();
-            this.twoAreasGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox2)).BeginInit();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -177,7 +171,6 @@
             this.metroContextMenuFile.SuspendLayout();
             this.metroContextMenuEdit.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.metroContextMenuView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appStyle)).BeginInit();
             this.SuspendLayout();
             // 
@@ -185,13 +178,14 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.SystemColors.Window;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.diagonalCropGroupBox);
+            this.panel1.Controls.Add(this.toolsPanel);
             this.panel1.Controls.Add(this.fourAreasGoupBox);
             this.panel1.Controls.Add(this.patternGroupBox);
             this.panel1.Controls.Add(this.valuePickerPanel);
-            this.panel1.Controls.Add(this.toolsPanel);
             this.panel1.Controls.Add(this.textGroupBox);
-            this.panel1.Controls.Add(this.diagonalCropGroupBox);
             this.panel1.Controls.Add(this.twoAreasGroupBox);
             this.panel1.Controls.Add(this.graphicsGroupBox);
             this.panel1.Location = new System.Drawing.Point(861, 22);
@@ -224,6 +218,8 @@
             // 
             // diagonalPicBox2
             // 
+            this.diagonalPicBox2.BackColor = System.Drawing.Color.Transparent;
+            this.diagonalPicBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.diagonalPicBox2.Location = new System.Drawing.Point(7, 275);
             this.diagonalPicBox2.Name = "diagonalPicBox2";
             this.diagonalPicBox2.Size = new System.Drawing.Size(287, 230);
@@ -234,6 +230,8 @@
             // 
             // diagonalPicBox1
             // 
+            this.diagonalPicBox1.BackColor = System.Drawing.Color.Transparent;
+            this.diagonalPicBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.diagonalPicBox1.Location = new System.Drawing.Point(7, 39);
             this.diagonalPicBox1.Name = "diagonalPicBox1";
             this.diagonalPicBox1.Size = new System.Drawing.Size(287, 230);
@@ -241,6 +239,95 @@
             this.diagonalPicBox1.TabIndex = 0;
             this.diagonalPicBox1.TabStop = false;
             this.diagonalPicBox1.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
+            // 
+            // toolsPanel
+            // 
+            this.toolsPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
+            this.toolsPanel.ColumnCount = 6;
+            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.toolsPanel.Location = new System.Drawing.Point(0, 0);
+            this.toolsPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.toolsPanel.Name = "toolsPanel";
+            this.toolsPanel.RowCount = 2;
+            this.toolsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.toolsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.toolsPanel.Size = new System.Drawing.Size(304, 93);
+            this.toolsPanel.TabIndex = 0;
+            // 
+            // fourAreasGoupBox
+            // 
+            this.fourAreasGoupBox.Controls.Add(this.label7);
+            this.fourAreasGoupBox.Controls.Add(this.fourAreaPicBox4);
+            this.fourAreasGoupBox.Controls.Add(this.fourAreaPicBox3);
+            this.fourAreasGoupBox.Controls.Add(this.fourAreaPicBox2);
+            this.fourAreasGoupBox.Controls.Add(this.fourAreaPicBox1);
+            this.fourAreasGoupBox.Location = new System.Drawing.Point(4, 100);
+            this.fourAreasGoupBox.Name = "fourAreasGoupBox";
+            this.fourAreasGoupBox.Size = new System.Drawing.Size(302, 350);
+            this.fourAreasGoupBox.TabIndex = 35;
+            this.fourAreasGoupBox.TabStop = false;
+            this.fourAreasGoupBox.Text = "Four Areas";
+            this.fourAreasGoupBox.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(5, 19);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(137, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Click on the images to save";
+            // 
+            // fourAreaPicBox4
+            // 
+            this.fourAreaPicBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fourAreaPicBox4.Location = new System.Drawing.Point(155, 199);
+            this.fourAreaPicBox4.Name = "fourAreaPicBox4";
+            this.fourAreaPicBox4.Size = new System.Drawing.Size(130, 138);
+            this.fourAreaPicBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fourAreaPicBox4.TabIndex = 3;
+            this.fourAreaPicBox4.TabStop = false;
+            this.fourAreaPicBox4.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
+            // 
+            // fourAreaPicBox3
+            // 
+            this.fourAreaPicBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fourAreaPicBox3.Location = new System.Drawing.Point(8, 199);
+            this.fourAreaPicBox3.Name = "fourAreaPicBox3";
+            this.fourAreaPicBox3.Size = new System.Drawing.Size(130, 138);
+            this.fourAreaPicBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fourAreaPicBox3.TabIndex = 2;
+            this.fourAreaPicBox3.TabStop = false;
+            this.fourAreaPicBox3.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
+            // 
+            // fourAreaPicBox2
+            // 
+            this.fourAreaPicBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fourAreaPicBox2.Location = new System.Drawing.Point(155, 47);
+            this.fourAreaPicBox2.Name = "fourAreaPicBox2";
+            this.fourAreaPicBox2.Size = new System.Drawing.Size(130, 138);
+            this.fourAreaPicBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fourAreaPicBox2.TabIndex = 1;
+            this.fourAreaPicBox2.TabStop = false;
+            this.fourAreaPicBox2.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
+            // 
+            // fourAreaPicBox1
+            // 
+            this.fourAreaPicBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fourAreaPicBox1.Location = new System.Drawing.Point(7, 47);
+            this.fourAreaPicBox1.Name = "fourAreaPicBox1";
+            this.fourAreaPicBox1.Size = new System.Drawing.Size(130, 138);
+            this.fourAreaPicBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fourAreaPicBox1.TabIndex = 0;
+            this.fourAreaPicBox1.TabStop = false;
+            this.fourAreaPicBox1.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
             // 
             // patternGroupBox
             // 
@@ -330,69 +417,64 @@
             this.label9.TabIndex = 4;
             this.label9.Text = "Rows:";
             // 
-            // fourAreasGoupBox
+            // valuePickerPanel
             // 
-            this.fourAreasGoupBox.Controls.Add(this.label7);
-            this.fourAreasGoupBox.Controls.Add(this.fourAreaPicBox4);
-            this.fourAreasGoupBox.Controls.Add(this.fourAreaPicBox3);
-            this.fourAreasGoupBox.Controls.Add(this.fourAreaPicBox2);
-            this.fourAreasGoupBox.Controls.Add(this.fourAreaPicBox1);
-            this.fourAreasGoupBox.Location = new System.Drawing.Point(4, 100);
-            this.fourAreasGoupBox.Name = "fourAreasGoupBox";
-            this.fourAreasGoupBox.Size = new System.Drawing.Size(302, 350);
-            this.fourAreasGoupBox.TabIndex = 35;
-            this.fourAreasGoupBox.TabStop = false;
-            this.fourAreasGoupBox.Text = "Four Areas";
-            this.fourAreasGoupBox.Visible = false;
+            this.valuePickerPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.valuePickerPanel.Controls.Add(this.textBox1);
+            this.valuePickerPanel.Controls.Add(this.applyButton);
+            this.valuePickerPanel.Controls.Add(this.maxLabel);
+            this.valuePickerPanel.Controls.Add(this.minLabel);
+            this.valuePickerPanel.Controls.Add(this.valueNameLabel);
+            this.valuePickerPanel.Location = new System.Drawing.Point(4, 100);
+            this.valuePickerPanel.Name = "valuePickerPanel";
+            this.valuePickerPanel.Size = new System.Drawing.Size(300, 101);
+            this.valuePickerPanel.TabIndex = 2;
+            this.valuePickerPanel.Visible = false;
             // 
-            // label7
+            // textBox1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(5, 19);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(137, 13);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Click on the images to save";
+            this.textBox1.Location = new System.Drawing.Point(51, 43);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(199, 20);
+            this.textBox1.TabIndex = 1;
             // 
-            // fourAreaPicBox4
+            // applyButton
             // 
-            this.fourAreaPicBox4.Location = new System.Drawing.Point(155, 199);
-            this.fourAreaPicBox4.Name = "fourAreaPicBox4";
-            this.fourAreaPicBox4.Size = new System.Drawing.Size(130, 138);
-            this.fourAreaPicBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fourAreaPicBox4.TabIndex = 3;
-            this.fourAreaPicBox4.TabStop = false;
-            this.fourAreaPicBox4.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
+            this.applyButton.Location = new System.Drawing.Point(113, 72);
+            this.applyButton.Name = "applyButton";
+            this.applyButton.Size = new System.Drawing.Size(75, 23);
+            this.applyButton.TabIndex = 3;
+            this.applyButton.Text = "Apply";
+            this.applyButton.UseVisualStyleBackColor = true;
+            this.applyButton.Click += new System.EventHandler(this.applyButton_Click);
             // 
-            // fourAreaPicBox3
+            // maxLabel
             // 
-            this.fourAreaPicBox3.Location = new System.Drawing.Point(8, 199);
-            this.fourAreaPicBox3.Name = "fourAreaPicBox3";
-            this.fourAreaPicBox3.Size = new System.Drawing.Size(130, 138);
-            this.fourAreaPicBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fourAreaPicBox3.TabIndex = 2;
-            this.fourAreaPicBox3.TabStop = false;
-            this.fourAreaPicBox3.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
+            this.maxLabel.AutoSize = true;
+            this.maxLabel.Location = new System.Drawing.Point(256, 43);
+            this.maxLabel.Name = "maxLabel";
+            this.maxLabel.Size = new System.Drawing.Size(26, 13);
+            this.maxLabel.TabIndex = 2;
+            this.maxLabel.Text = "max";
             // 
-            // fourAreaPicBox2
+            // minLabel
             // 
-            this.fourAreaPicBox2.Location = new System.Drawing.Point(155, 47);
-            this.fourAreaPicBox2.Name = "fourAreaPicBox2";
-            this.fourAreaPicBox2.Size = new System.Drawing.Size(130, 138);
-            this.fourAreaPicBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fourAreaPicBox2.TabIndex = 1;
-            this.fourAreaPicBox2.TabStop = false;
-            this.fourAreaPicBox2.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
+            this.minLabel.AutoSize = true;
+            this.minLabel.Location = new System.Drawing.Point(22, 47);
+            this.minLabel.Name = "minLabel";
+            this.minLabel.Size = new System.Drawing.Size(23, 13);
+            this.minLabel.TabIndex = 1;
+            this.minLabel.Text = "min";
             // 
-            // fourAreaPicBox1
+            // valueNameLabel
             // 
-            this.fourAreaPicBox1.Location = new System.Drawing.Point(7, 47);
-            this.fourAreaPicBox1.Name = "fourAreaPicBox1";
-            this.fourAreaPicBox1.Size = new System.Drawing.Size(130, 138);
-            this.fourAreaPicBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fourAreaPicBox1.TabIndex = 0;
-            this.fourAreaPicBox1.TabStop = false;
-            this.fourAreaPicBox1.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
+            this.valueNameLabel.AutoSize = true;
+            this.valueNameLabel.Location = new System.Drawing.Point(114, 18);
+            this.valueNameLabel.Name = "valueNameLabel";
+            this.valueNameLabel.Size = new System.Drawing.Size(22, 13);
+            this.valueNameLabel.TabIndex = 0;
+            this.valueNameLabel.Text = "- - -";
+            this.valueNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textGroupBox
             // 
@@ -523,6 +605,50 @@
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(163, 20);
             this.textBox.TabIndex = 1;
+            // 
+            // twoAreasGroupBox
+            // 
+            this.twoAreasGroupBox.Controls.Add(this.twoAreaPicBox1);
+            this.twoAreasGroupBox.Controls.Add(this.label8);
+            this.twoAreasGroupBox.Controls.Add(this.twoAreaPicBox2);
+            this.twoAreasGroupBox.Location = new System.Drawing.Point(4, 100);
+            this.twoAreasGroupBox.Name = "twoAreasGroupBox";
+            this.twoAreasGroupBox.Size = new System.Drawing.Size(300, 405);
+            this.twoAreasGroupBox.TabIndex = 36;
+            this.twoAreasGroupBox.TabStop = false;
+            this.twoAreasGroupBox.Text = "Two Areas";
+            this.twoAreasGroupBox.Visible = false;
+            // 
+            // twoAreaPicBox1
+            // 
+            this.twoAreaPicBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.twoAreaPicBox1.Location = new System.Drawing.Point(0, 43);
+            this.twoAreaPicBox1.Name = "twoAreaPicBox1";
+            this.twoAreaPicBox1.Size = new System.Drawing.Size(297, 173);
+            this.twoAreaPicBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.twoAreaPicBox1.TabIndex = 0;
+            this.twoAreaPicBox1.TabStop = false;
+            this.twoAreaPicBox1.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(5, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(137, 13);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Click on the images to save";
+            // 
+            // twoAreaPicBox2
+            // 
+            this.twoAreaPicBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.twoAreaPicBox2.Location = new System.Drawing.Point(0, 222);
+            this.twoAreaPicBox2.Name = "twoAreaPicBox2";
+            this.twoAreaPicBox2.Size = new System.Drawing.Size(296, 173);
+            this.twoAreaPicBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.twoAreaPicBox2.TabIndex = 1;
+            this.twoAreaPicBox2.TabStop = false;
+            this.twoAreaPicBox2.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
             // 
             // graphicsGroupBox
             // 
@@ -700,128 +826,6 @@
             this.graphicsPicBox.TabIndex = 24;
             this.graphicsPicBox.TabStop = false;
             // 
-            // valuePickerPanel
-            // 
-            this.valuePickerPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.valuePickerPanel.Controls.Add(this.textBox1);
-            this.valuePickerPanel.Controls.Add(this.applyButton);
-            this.valuePickerPanel.Controls.Add(this.maxLabel);
-            this.valuePickerPanel.Controls.Add(this.minLabel);
-            this.valuePickerPanel.Controls.Add(this.valueNameLabel);
-            this.valuePickerPanel.Location = new System.Drawing.Point(4, 100);
-            this.valuePickerPanel.Name = "valuePickerPanel";
-            this.valuePickerPanel.Size = new System.Drawing.Size(300, 101);
-            this.valuePickerPanel.TabIndex = 2;
-            this.valuePickerPanel.Visible = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(51, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // applyButton
-            // 
-            this.applyButton.Location = new System.Drawing.Point(113, 72);
-            this.applyButton.Name = "applyButton";
-            this.applyButton.Size = new System.Drawing.Size(75, 23);
-            this.applyButton.TabIndex = 3;
-            this.applyButton.Text = "Apply";
-            this.applyButton.UseVisualStyleBackColor = true;
-            this.applyButton.Click += new System.EventHandler(this.applyButton_Click);
-            // 
-            // maxLabel
-            // 
-            this.maxLabel.AutoSize = true;
-            this.maxLabel.Location = new System.Drawing.Point(256, 43);
-            this.maxLabel.Name = "maxLabel";
-            this.maxLabel.Size = new System.Drawing.Size(26, 13);
-            this.maxLabel.TabIndex = 2;
-            this.maxLabel.Text = "max";
-            // 
-            // minLabel
-            // 
-            this.minLabel.AutoSize = true;
-            this.minLabel.Location = new System.Drawing.Point(22, 47);
-            this.minLabel.Name = "minLabel";
-            this.minLabel.Size = new System.Drawing.Size(23, 13);
-            this.minLabel.TabIndex = 1;
-            this.minLabel.Text = "min";
-            // 
-            // valueNameLabel
-            // 
-            this.valueNameLabel.AutoSize = true;
-            this.valueNameLabel.Location = new System.Drawing.Point(134, 22);
-            this.valueNameLabel.Name = "valueNameLabel";
-            this.valueNameLabel.Size = new System.Drawing.Size(22, 13);
-            this.valueNameLabel.TabIndex = 0;
-            this.valueNameLabel.Text = "- - -";
-            this.valueNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // toolsPanel
-            // 
-            this.toolsPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
-            this.toolsPanel.ColumnCount = 6;
-            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.toolsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.toolsPanel.Location = new System.Drawing.Point(0, 0);
-            this.toolsPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.toolsPanel.Name = "toolsPanel";
-            this.toolsPanel.RowCount = 2;
-            this.toolsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.toolsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.toolsPanel.Size = new System.Drawing.Size(304, 93);
-            this.toolsPanel.TabIndex = 0;
-            // 
-            // twoAreasGroupBox
-            // 
-            this.twoAreasGroupBox.Controls.Add(this.twoAreaPicBox1);
-            this.twoAreasGroupBox.Controls.Add(this.label8);
-            this.twoAreasGroupBox.Controls.Add(this.twoAreaPicBox2);
-            this.twoAreasGroupBox.Location = new System.Drawing.Point(4, 100);
-            this.twoAreasGroupBox.Name = "twoAreasGroupBox";
-            this.twoAreasGroupBox.Size = new System.Drawing.Size(300, 405);
-            this.twoAreasGroupBox.TabIndex = 36;
-            this.twoAreasGroupBox.TabStop = false;
-            this.twoAreasGroupBox.Text = "Two Areas";
-            this.twoAreasGroupBox.Visible = false;
-            // 
-            // twoAreaPicBox1
-            // 
-            this.twoAreaPicBox1.Location = new System.Drawing.Point(0, 43);
-            this.twoAreaPicBox1.Name = "twoAreaPicBox1";
-            this.twoAreaPicBox1.Size = new System.Drawing.Size(297, 173);
-            this.twoAreaPicBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.twoAreaPicBox1.TabIndex = 0;
-            this.twoAreaPicBox1.TabStop = false;
-            this.twoAreaPicBox1.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(5, 19);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(137, 13);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Click on the images to save";
-            // 
-            // twoAreaPicBox2
-            // 
-            this.twoAreaPicBox2.Location = new System.Drawing.Point(0, 222);
-            this.twoAreaPicBox2.Name = "twoAreaPicBox2";
-            this.twoAreaPicBox2.Size = new System.Drawing.Size(296, 173);
-            this.twoAreaPicBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.twoAreaPicBox2.TabIndex = 1;
-            this.twoAreaPicBox2.TabStop = false;
-            this.twoAreaPicBox2.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
-            // 
             // zoomLabel
             // 
             this.zoomLabel.AutoSize = true;
@@ -877,10 +881,11 @@
             // 
             // toolsPanelBasic
             // 
+            this.toolsPanelBasic.BackColor = System.Drawing.SystemColors.Window;
             this.toolsPanelBasic.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
             this.toolsPanelBasic.ColumnCount = 1;
             this.toolsPanelBasic.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.toolsPanelBasic.Location = new System.Drawing.Point(0, 0);
+            this.toolsPanelBasic.Location = new System.Drawing.Point(2, 2);
             this.toolsPanelBasic.Margin = new System.Windows.Forms.Padding(2);
             this.toolsPanelBasic.Name = "toolsPanelBasic";
             this.toolsPanelBasic.RowCount = 14;
@@ -918,7 +923,7 @@
             // 
             // imgPicBox
             // 
-            this.imgPicBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.imgPicBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.imgPicBox.Location = new System.Drawing.Point(-2, -2);
             this.imgPicBox.Margin = new System.Windows.Forms.Padding(2);
             this.imgPicBox.Name = "imgPicBox";
@@ -929,6 +934,8 @@
             // 
             // metroTabPage2
             // 
+            this.metroTabPage2.Controls.Add(this.metroLabel2);
+            this.metroTabPage2.Controls.Add(this.metroLabel1);
             this.metroTabPage2.Controls.Add(this.colorCombo);
             this.metroTabPage2.Controls.Add(this.themeCombo);
             this.metroTabPage2.Controls.Add(this.metroLabel7);
@@ -939,12 +946,22 @@
             this.metroTabPage2.HorizontalScrollbarSize = 10;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(926, 623);
+            this.metroTabPage2.Size = new System.Drawing.Size(1169, 792);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Settings";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel1.Location = new System.Drawing.Point(7, 184);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(50, 19);
+            this.metroLabel1.TabIndex = 36;
+            this.metroLabel1.Text = "About";
             // 
             // colorCombo
             // 
@@ -990,9 +1007,10 @@
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
+            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel7.Location = new System.Drawing.Point(3, 9);
             this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(96, 19);
+            this.metroLabel7.Size = new System.Drawing.Size(112, 19);
             this.metroLabel7.TabIndex = 33;
             this.metroLabel7.Text = "Personalization";
             // 
@@ -1075,17 +1093,6 @@
             this.metroTile2.UseSelectable = true;
             this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
-            // metroTile3
-            // 
-            this.metroTile3.ActiveControl = null;
-            this.metroTile3.Location = new System.Drawing.Point(179, 63);
-            this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(77, 44);
-            this.metroTile3.TabIndex = 7;
-            this.metroTile3.Text = "View";
-            this.metroTile3.UseSelectable = true;
-            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
-            // 
             // metroContextMenuEdit
             // 
             this.metroContextMenuEdit.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -1157,7 +1164,7 @@
             // 
             // newToolStripMenuItem
             // 
-            this.newToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.file_new_icon;
+            this.newToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.new_file;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
@@ -1166,7 +1173,7 @@
             // 
             // openToolStripMenuItem
             // 
-            this.openToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.file_open_icon;
+            this.openToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.open_file;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
@@ -1175,7 +1182,7 @@
             // 
             // saveToolStripMenuItem
             // 
-            this.saveToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.file_save_icon;
+            this.saveToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.save_file;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
@@ -1184,7 +1191,7 @@
             // 
             // exitToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.file_exit_icon;
+            this.exitToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.exit;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
@@ -1205,40 +1212,40 @@
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Enabled = false;
-            this.undoToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.undo_icon;
+            this.undoToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.undo;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.undoToolStripMenuItem.Text = "Undo";
             this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
             // 
             // redoToolStripMenuItem
             // 
             this.redoToolStripMenuItem.Enabled = false;
-            this.redoToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.redo_icon;
+            this.redoToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.redo;
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
             this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.Z)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.redoToolStripMenuItem.Text = "Redo";
             this.redoToolStripMenuItem.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);
             // 
             // resizeToolStripMenuItem
             // 
-            this.resizeToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.resize_icon;
+            this.resizeToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.resize;
             this.resizeToolStripMenuItem.Name = "resizeToolStripMenuItem";
             this.resizeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.resizeToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.resizeToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.resizeToolStripMenuItem.Text = "Resize Image";
             this.resizeToolStripMenuItem.Click += new System.EventHandler(this.resizeToolStripMenuItem_Click);
             // 
             // patternToolStripMenuItem
             // 
-            this.patternToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.pattern_icon;
+            this.patternToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.pattern;
             this.patternToolStripMenuItem.Name = "patternToolStripMenuItem";
             this.patternToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.P)));
-            this.patternToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.patternToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.patternToolStripMenuItem.Text = "Pattern";
             this.patternToolStripMenuItem.Click += new System.EventHandler(this.patternToolStripMenuItem_Click);
             // 
@@ -1322,67 +1329,20 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // metroContextMenuView
-            // 
-            this.metroContextMenuView.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItemZoom});
-            this.metroContextMenuView.Name = "metroContextMenuZoom";
-            this.metroContextMenuView.Size = new System.Drawing.Size(107, 26);
-            // 
-            // toolStripMenuItemZoom
-            // 
-            this.toolStripMenuItemZoom.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem50,
-            this.toolStripMenuItem100,
-            this.toolStripMenuItem150,
-            this.toolStripMenuItem200,
-            this.toolStripMenuItem400,
-            this.toolStripMenuItem500});
-            this.toolStripMenuItemZoom.Name = "toolStripMenuItemZoom";
-            this.toolStripMenuItemZoom.Size = new System.Drawing.Size(106, 22);
-            this.toolStripMenuItemZoom.Text = "Zoom";
-            // 
-            // toolStripMenuItem50
-            // 
-            this.toolStripMenuItem50.Name = "toolStripMenuItem50";
-            this.toolStripMenuItem50.Size = new System.Drawing.Size(102, 22);
-            this.toolStripMenuItem50.Text = "50%";
-            // 
-            // toolStripMenuItem100
-            // 
-            this.toolStripMenuItem100.Checked = true;
-            this.toolStripMenuItem100.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.toolStripMenuItem100.Name = "toolStripMenuItem100";
-            this.toolStripMenuItem100.Size = new System.Drawing.Size(102, 22);
-            this.toolStripMenuItem100.Text = "100%";
-            // 
-            // toolStripMenuItem150
-            // 
-            this.toolStripMenuItem150.Name = "toolStripMenuItem150";
-            this.toolStripMenuItem150.Size = new System.Drawing.Size(102, 22);
-            this.toolStripMenuItem150.Text = "150%";
-            // 
-            // toolStripMenuItem200
-            // 
-            this.toolStripMenuItem200.Name = "toolStripMenuItem200";
-            this.toolStripMenuItem200.Size = new System.Drawing.Size(102, 22);
-            this.toolStripMenuItem200.Text = "200%";
-            // 
-            // toolStripMenuItem400
-            // 
-            this.toolStripMenuItem400.Name = "toolStripMenuItem400";
-            this.toolStripMenuItem400.Size = new System.Drawing.Size(102, 22);
-            this.toolStripMenuItem400.Text = "400%";
-            // 
-            // toolStripMenuItem500
-            // 
-            this.toolStripMenuItem500.Name = "toolStripMenuItem500";
-            this.toolStripMenuItem500.Size = new System.Drawing.Size(102, 22);
-            this.toolStripMenuItem500.Text = "500%";
-            // 
             // appStyle
             // 
             this.appStyle.Owner = this;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.ForeColor = System.Drawing.Color.Coral;
+            this.metroLabel2.Location = new System.Drawing.Point(7, 203);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(168, 76);
+            this.metroLabel2.TabIndex = 37;
+            this.metroLabel2.Text = "ISEP - IMAVD 2018/2019\r\nFrancisco Santos - 1100584\r\nMiguel Morgado - 1150605\r\nLuí" +
+    "s Santos - 1170033";
             // 
             // Form1
             // 
@@ -1390,11 +1350,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1203, 960);
-            this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
@@ -1405,22 +1366,28 @@
             this.diagonalCropGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.diagonalPicBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diagonalPicBox1)).EndInit();
-            this.patternGroupBox.ResumeLayout(false);
-            this.patternGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.columnsInput)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rowsInput)).EndInit();
             this.fourAreasGoupBox.ResumeLayout(false);
             this.fourAreasGoupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox1)).EndInit();
+            this.patternGroupBox.ResumeLayout(false);
+            this.patternGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.columnsInput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rowsInput)).EndInit();
+            this.valuePickerPanel.ResumeLayout(false);
+            this.valuePickerPanel.PerformLayout();
             this.textGroupBox.ResumeLayout(false);
             this.textGroupBox.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fontXUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fontYUpDown)).EndInit();
+            this.twoAreasGroupBox.ResumeLayout(false);
+            this.twoAreasGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox2)).EndInit();
             this.graphicsGroupBox.ResumeLayout(false);
             this.graphicsGroupBox.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -1432,12 +1399,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.graphicsPicBox)).EndInit();
-            this.valuePickerPanel.ResumeLayout(false);
-            this.valuePickerPanel.PerformLayout();
-            this.twoAreasGroupBox.ResumeLayout(false);
-            this.twoAreasGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox2)).EndInit();
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
@@ -1450,7 +1411,6 @@
             this.metroContextMenuEdit.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.metroContextMenuView.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.appStyle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1526,7 +1486,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemOpen;
         private MetroFramework.Controls.MetroContextMenu metroContextMenuFile;
         private MetroFramework.Controls.MetroTile metroTile2;
-        private MetroFramework.Controls.MetroTile metroTile3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemNew;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemSave;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemExit;
@@ -1555,14 +1514,6 @@
         private System.Windows.Forms.ToolStripMenuItem zoom400toolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zoom500toolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private MetroFramework.Controls.MetroContextMenu metroContextMenuView;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemZoom;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem50;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem100;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem150;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem200;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem400;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem500;
         private MetroFramework.Controls.MetroComboBox colorCombo;
         private MetroFramework.Controls.MetroComboBox themeCombo;
         private MetroFramework.Controls.MetroLabel metroLabel7;
@@ -1570,6 +1521,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Components.MetroStyleManager appStyle;
         private System.Windows.Forms.TableLayoutPanel toolsPanelBasic;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
     }
 }
 

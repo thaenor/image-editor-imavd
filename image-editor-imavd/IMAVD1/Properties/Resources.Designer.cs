@@ -63,9 +63,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap brightness_icon {
+        internal static System.Drawing.Bitmap blue_filter {
             get {
-                object obj = ResourceManager.GetObject("brightness_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("blue_filter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap chromakey_icon {
+        internal static System.Drawing.Bitmap brightness {
             get {
-                object obj = ResourceManager.GetObject("chromakey_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("brightness", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap chromakey2_icon {
+        internal static System.Drawing.Bitmap chromakey {
             get {
-                object obj = ResourceManager.GetObject("chromakey2_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("chromakey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap color {
+        internal static System.Drawing.Bitmap color_counter {
             get {
-                object obj = ResourceManager.GetObject("color", resourceCulture);
+                object obj = ResourceManager.GetObject("color_counter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap color_dropper_icon {
+        internal static System.Drawing.Bitmap color_wheel {
             get {
-                object obj = ResourceManager.GetObject("color_dropper_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("color_wheel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap colors_wheel {
+        internal static System.Drawing.Bitmap contrast {
             get {
-                object obj = ResourceManager.GetObject("colors_wheel", resourceCulture);
+                object obj = ResourceManager.GetObject("contrast", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap contrast_icon {
+        internal static System.Drawing.Bitmap crop {
             get {
-                object obj = ResourceManager.GetObject("contrast_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("crop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap crop_icon {
+        internal static System.Drawing.Bitmap exit {
             get {
-                object obj = ResourceManager.GetObject("crop_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("exit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap down_right_icon {
+        internal static System.Drawing.Bitmap flip_horizonta {
             get {
-                object obj = ResourceManager.GetObject("down_right_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("flip_horizonta", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap file_exit_icon {
+        internal static System.Drawing.Bitmap flip_vertical {
             get {
-                object obj = ResourceManager.GetObject("file_exit_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("flip_vertical", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap file_new_icon {
+        internal static System.Drawing.Bitmap four_areas {
             get {
-                object obj = ResourceManager.GetObject("file_new_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("four_areas", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap file_open_icon {
+        internal static System.Drawing.Bitmap gamma {
             get {
-                object obj = ResourceManager.GetObject("file_open_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("gamma", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,69 +183,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap file_save_icon {
+        internal static System.Drawing.Bitmap green_filter {
             get {
-                object obj = ResourceManager.GetObject("file_save_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap filter_blue_icon {
-            get {
-                object obj = ResourceManager.GetObject("filter_blue_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap filter_green_icon {
-            get {
-                object obj = ResourceManager.GetObject("filter_green_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap filter_red_icon {
-            get {
-                object obj = ResourceManager.GetObject("filter_red_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap four_areas_icon {
-            get {
-                object obj = ResourceManager.GetObject("four_areas_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap gamma_icon {
-            get {
-                object obj = ResourceManager.GetObject("gamma_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap graphics_icon {
-            get {
-                object obj = ResourceManager.GetObject("graphics_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("green_filter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +203,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap invert_colors_icon {
+        internal static System.Drawing.Bitmap insert {
             get {
-                object obj = ResourceManager.GetObject("invert_colors_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("insert", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,9 +213,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pattern_icon {
+        internal static System.Drawing.Bitmap invert_color {
             get {
-                object obj = ResourceManager.GetObject("pattern_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("invert_color", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,9 +223,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap picture_icon {
+        internal static System.Drawing.Bitmap new_file {
             get {
-                object obj = ResourceManager.GetObject("picture_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("new_file", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,9 +233,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap redo_icon {
+        internal static System.Drawing.Bitmap open_file {
             get {
-                object obj = ResourceManager.GetObject("redo_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("open_file", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -303,9 +243,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap resize_icon {
+        internal static System.Drawing.Bitmap pattern {
             get {
-                object obj = ResourceManager.GetObject("resize_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("pattern", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,9 +253,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rotate_horizontal_icon {
+        internal static System.Drawing.Bitmap red_filter {
             get {
-                object obj = ResourceManager.GetObject("rotate_horizontal_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("red_filter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,9 +263,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rotate_left_arrow {
+        internal static System.Drawing.Bitmap redo {
             get {
-                object obj = ResourceManager.GetObject("rotate_left_arrow", resourceCulture);
+                object obj = ResourceManager.GetObject("redo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,9 +273,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rotate_right_arrow {
+        internal static System.Drawing.Bitmap resize {
             get {
-                object obj = ResourceManager.GetObject("rotate_right_arrow", resourceCulture);
+                object obj = ResourceManager.GetObject("resize", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,9 +283,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rotate_vertical_icon {
+        internal static System.Drawing.Bitmap rotate_left {
             get {
-                object obj = ResourceManager.GetObject("rotate_vertical_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("rotate_left", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,9 +293,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap text_icon {
+        internal static System.Drawing.Bitmap rotate_right {
             get {
-                object obj = ResourceManager.GetObject("text_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("rotate_right", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,9 +303,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap triangles_icon {
+        internal static System.Drawing.Bitmap save_file {
             get {
-                object obj = ResourceManager.GetObject("triangles_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("save_file", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,9 +313,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap two_areas_icon {
+        internal static System.Drawing.Bitmap text {
             get {
-                object obj = ResourceManager.GetObject("two_areas_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("text", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,9 +323,9 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap undo_icon {
+        internal static System.Drawing.Bitmap triangles {
             get {
-                object obj = ResourceManager.GetObject("undo_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("triangles", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,9 +333,19 @@ namespace IMAVD1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap up_left_icon {
+        internal static System.Drawing.Bitmap two_areas {
             get {
-                object obj = ResourceManager.GetObject("up_left_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("two_areas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undo {
+            get {
+                object obj = ResourceManager.GetObject("undo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

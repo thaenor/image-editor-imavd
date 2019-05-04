@@ -60,6 +60,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ResizeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,14 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="ResizeForm.resx">
       <DependentUpon>ResizeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,9 +185,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\color.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\info.png" />
@@ -247,19 +244,10 @@
     <None Include="Resources\file_save_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\graphics_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\paintbrush.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\picture_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\text_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\chromakey_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\chromakey_icon.jpg" />
@@ -268,22 +256,13 @@
     <None Include="Resources\resize_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\chromakey2_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\color_dropper_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\down_right_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\four_areas_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\two_areas_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\up_left_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\triangles_icon.png" />

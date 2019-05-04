@@ -24,9 +24,10 @@ namespace IMAVD1
 
         public Form1()
         {
-            this.StyleManager = appStyle;
 
             InitializeComponent();
+
+            this.StyleManager = appStyle;
 
             selectedZoom = zoom100toolStripMenuItem;
             WindowState = FormWindowState.Maximized;
@@ -461,6 +462,7 @@ namespace IMAVD1
         private void resizeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ResizeForm resizeForm = new ResizeForm(this);
+            resizeForm.StyleManager = this.StyleManager;
             resizeForm.Show();
             resizeForm.StyleManager = appStyle;
         }
@@ -642,7 +644,7 @@ namespace IMAVD1
 
         private void metroTile3_Click(object sender, EventArgs e)
         {
-            metroContextMenuView.Show(metroTile3, 0, metroTile3.Height);
+            
         }
 
         private void themeCombo_SelectedIndexChanged_1(object sender, EventArgs e)

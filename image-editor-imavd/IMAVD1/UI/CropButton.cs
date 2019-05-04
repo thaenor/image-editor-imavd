@@ -17,7 +17,7 @@ namespace IMAVD1.UI
         {
             Click += new EventHandler(button_Click);
             this.form = form;
-            this.BackgroundImage = Properties.Resources.crop_icon;
+            this.BackgroundImage = Properties.Resources.crop;
             this.BackgroundImageLayout = ImageLayout.Zoom;
             setToolTip("Crop Image");
         }

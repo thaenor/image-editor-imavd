@@ -11,7 +11,7 @@ namespace IMAVD1
         {
             this.Click += new EventHandler(button_Click);
             this.form = form;
-            this.BackgroundImage = IMAVD1.Properties.Resources.rotate_right_arrow;
+            this.BackgroundImage = IMAVD1.Properties.Resources.rotate_right;
             BackgroundImageLayout = ImageLayout.Zoom;
             setToolTip("Rotate 90º to the right");
         }

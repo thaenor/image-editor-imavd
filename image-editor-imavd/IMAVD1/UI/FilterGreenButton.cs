@@ -11,7 +11,7 @@ namespace IMAVD1
         {
             this.Click += new EventHandler(button_Click);
             this.form = form;
-            this.BackgroundImage = IMAVD1.Properties.Resources.filter_green_icon;
+            this.BackgroundImage = IMAVD1.Properties.Resources.green_filter;
             this.BackgroundImageLayout = ImageLayout.Zoom;
             setToolTip("Filter to green colors");
         }

@@ -12,7 +12,7 @@ namespace IMAVD1.UI
         {
             this.Click += new EventHandler(button_Click);
             this.form = form;
-            this.BackgroundImage = IMAVD1.Properties.Resources.graphics_icon;
+            this.BackgroundImage = IMAVD1.Properties.Resources.insert;
             this.BackgroundImageLayout = ImageLayout.Zoom;
             setToolTip("Add other image");
         }

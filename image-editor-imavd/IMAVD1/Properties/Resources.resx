@@ -118,106 +118,91 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="colors_wheel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="color_wheel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\colors_wheel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="redo_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\redo_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file_exit_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file_exit_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="brightness_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="brightness" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\brightness_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="filter_blue_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="blue_filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\filter_blue_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rotate_right_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="rotate_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rotate_right_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="resize_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="resize" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\resize_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="graphics_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="insert" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\paintbrush.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="contrast_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="contrast" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\contrast_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="filter_green_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="green_filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\filter_green_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gamma_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="gamma" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gamma_icon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="text_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="text" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\text_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="filter_red_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="red_filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\filter_red_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rotate_left_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="rotate_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rotate_left_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chromakey2_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chromakey2_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="picture_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\picture_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chromakey_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="chromakey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chromakey_icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file_save_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="save_file" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file_save_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="invert_colors_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="invert_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\invert_colors_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="undo_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\undo_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file_new_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="new_file" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file_new_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="color_dropper_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="color_counter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\color_dropper_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rotate_horizontal_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="flip_horizonta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flip_vertical_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="color" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="file_open_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="open_file" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file_open_icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rotate_vertical_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="flip_vertical" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flip_horizontal_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="crop_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="crop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\crop_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="down_right_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\down_right_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="four_areas_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="four_areas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\four_areas_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="triangles_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="triangles" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\triangles_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="two_areas_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="two_areas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\two_areas_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="up_left_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\up_left_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pattern_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="pattern" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pattern_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
