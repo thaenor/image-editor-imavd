@@ -141,9 +141,18 @@ namespace IMAVD1
         {
             metroContextMenuEdit.Show(metroTile2, 0, metroTile2.Height);
         }
-
         //edit context menu undo button
-        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripMenuItemUndo_Click_1(object sender, EventArgs e)
+        {
+            undo();
+        }
+        
+        private void undoToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            undo();
+        }
+        
+        public void undo()
         {
             if (stackImages.Count > 1)
             {
@@ -156,15 +165,26 @@ namespace IMAVD1
                 zoom100toolStripMenuItem.PerformClick();
                 if (stackRedoImages.Count > 0)
                     redoToolStripMenuItem.Enabled = true;
+                    toolStripMenuItemRedo.Enabled = true;
             }
             if (stackImages.Count <= 1)
             {
                 undoToolStripMenuItem.Enabled = false;
+                toolStripMenuItemUndo.Enabled = false;
             }
         }
 
         //edit context menu redo button
-        private void redoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripMenuItemRedo_Click_1(object sender, EventArgs e)
+        {
+            redo();
+        }
+        private void redoToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            redo();
+        }
+
+        public void redo()
         {
             if (stackRedoImages.Count > 0)
             {
@@ -177,9 +197,11 @@ namespace IMAVD1
             }
             if (stackRedoImages.Count == 0)
             {
-                undoToolStripMenuItem.Enabled = false;
+                redoToolStripMenuItem.Enabled = false;
+                toolStripMenuItemRedo.Enabled = false;
             }
             if (stackImages.Count > 1)
+                undoToolStripMenuItem.Enabled = true;
                 toolStripMenuItemUndo.Enabled = true;
         }
 
@@ -286,7 +308,9 @@ namespace IMAVD1
             imgOriginal = (Image)newImage.Clone();
             if (stackImages.Count > 1)
                 undoToolStripMenuItem.Enabled = true;
+                toolStripMenuItemUndo.Enabled = true;
             redoToolStripMenuItem.Enabled = false;
+            toolStripMenuItemRedo.Enabled = false;
         }
 
         public static string ShowDialog(string text, string caption)
