@@ -21,9 +21,7 @@ namespace IMAVD1.UI
             this.BackgroundImageLayout = ImageLayout.Zoom;
             setToolTip("Crop Image");
         }
-
-
-
+        
         private void button_Click(object sender, EventArgs e)
         {
             if (form.Cursor == Cursors.Cross)

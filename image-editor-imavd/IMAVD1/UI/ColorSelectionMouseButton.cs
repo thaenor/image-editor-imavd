@@ -27,7 +27,6 @@ namespace IMAVD1
         {
 
             form.Cursor = Cursors.Cross;
-            //this.form.activateColorMouseClick();
 
             Bitmap img = new Bitmap(this.form.imgPicBox.Image);
 

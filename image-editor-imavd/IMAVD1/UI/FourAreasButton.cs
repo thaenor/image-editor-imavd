@@ -44,18 +44,12 @@ namespace IMAVD1.UI
                     Rectangle rec2 = new Rectangle(this.form.imgPicBox.Width / 2, 0, this.form.imgPicBox.Width / 2, this.form.imgPicBox.Height / 2);
                     Rectangle rec3 = new Rectangle(0, this.form.imgPicBox.Height / 2, this.form.imgPicBox.Width / 2, this.form.imgPicBox.Height / 2);
                     Rectangle rec4 = new Rectangle(this.form.imgPicBox.Width / 2, this.form.imgPicBox.Height / 2, this.form.imgPicBox.Width / 2, this.form.imgPicBox.Height / 2);
-
-                    //this.form.fourAreaPicBox1.BackColor = Color.Red;
-                    //this.form.fourAreaPicBox2.BackColor = Color.Red;
-                    //this.form.fourAreaPicBox3.BackColor = Color.Red;
-                    //this.form.fourAreaPicBox4.BackColor = Color.Red;
-
+                    
                     this.form.fourAreaPicBox1.Image = getCroppedBitmap((Bitmap)this.form.imgPicBox.Image.Clone(), rec1);
                     this.form.fourAreaPicBox2.Image = getCroppedBitmap((Bitmap)this.form.imgPicBox.Image.Clone(), rec2);
                     this.form.fourAreaPicBox3.Image = getCroppedBitmap((Bitmap)this.form.imgPicBox.Image.Clone(), rec3);
                     this.form.fourAreaPicBox4.Image = getCroppedBitmap((Bitmap)this.form.imgPicBox.Image.Clone(), rec4);
-
-
+                    
                     this.form.valuePickerPanel.Visible = false;
                     this.form.textGroupBox.Visible = false;
                     this.form.graphicsGroupBox.Visible = false;

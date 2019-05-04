@@ -924,9 +924,9 @@
             // 
             // imgPicBox
             // 
-            this.imgPicBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.imgPicBox.Location = new System.Drawing.Point(0, 1);
-            this.imgPicBox.Margin = new System.Windows.Forms.Padding(2);
+            this.imgPicBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.imgPicBox.Location = new System.Drawing.Point(0, 0);
+            this.imgPicBox.Margin = new System.Windows.Forms.Padding(4);
             this.imgPicBox.Name = "imgPicBox";
             this.imgPicBox.Size = new System.Drawing.Size(500, 500);
             this.imgPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1289,7 +1289,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(115, 2);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(246, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(50, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 

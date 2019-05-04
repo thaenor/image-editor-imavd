@@ -43,17 +43,9 @@ namespace IMAVD1.UI
                     Rectangle rec1 = new Rectangle(0, 0, this.form.imgPicBox.Width, this.form.imgPicBox.Height / 2);
                     Rectangle rec2 = new Rectangle(0,this.form.imgPicBox.Height / 2, this.form.imgPicBox.Width, this.form.imgPicBox.Height / 2);
                     
-
-                    //this.form.fourAreaPicBox1.BackColor = Color.Red;
-                    //this.form.fourAreaPicBox2.BackColor = Color.Red;
-                    //this.form.fourAreaPicBox3.BackColor = Color.Red;
-                    //this.form.fourAreaPicBox4.BackColor = Color.Red;
-
                     this.form.twoAreaPicBox1.Image = getCroppedBitmap((Bitmap)this.form.imgPicBox.Image.Clone(), rec1);
                     this.form.twoAreaPicBox2.Image = getCroppedBitmap((Bitmap)this.form.imgPicBox.Image.Clone(), rec2);
                     
-
-
                     this.form.valuePickerPanel.Visible = false;
                     this.form.textGroupBox.Visible = false;
                     this.form.graphicsGroupBox.Visible = false;

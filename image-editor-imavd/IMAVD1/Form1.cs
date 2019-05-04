@@ -59,7 +59,7 @@ namespace IMAVD1
             this.toolsPanel.Controls.Add(new ChangeBrightnessButton(this));
             this.toolsPanel.Controls.Add(new ChangeContrastButton(this));
             this.toolsPanel.Controls.Add(new ChangeGamaButton(this));
-
+            
         }
         //botoes tools 1
         private void addToolButtonsBasics()
