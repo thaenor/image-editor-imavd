@@ -46,45 +46,8 @@ namespace IMAVD1
             colorCombo.SelectedIndex = 0;
         }
 
-        //New
-        private void newToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.imgPicBox.BackColor = Color.White;
-            this.imgPicBox.ImageLocation = null;
-            stackImages.Clear();
-            stackRedoImages.Clear();
-        }
-
-        //open
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            string path;
-            OpenFileDialog file = new OpenFileDialog();
-            if (file.ShowDialog() == DialogResult.OK)
-            {
-                stackImages.Clear();
-                stackRedoImages.Clear();
-                imagePath = file.FileName;
-                this.imgPicBox.ImageLocation = imagePath;
-                imgPicBox.LoadCompleted += new AsyncCompletedEventHandler(ImageCompleted);
-                //sets coordinate limits to future objects in the image
-                this.fontXUpDown.Maximum = this.imgPicBox.Width;
-                this.fontYUpDown.Maximum = this.imgPicBox.Height;
-                this.imageClick = false;
-
-
-            }
-        }
-
-        private void ImageCompleted(object sender, AsyncCompletedEventArgs e)
-        {
-            if (!e.Cancelled && stackImages.Count == 0)
-            {
-                stackImages.Insert(0, (Image)imgPicBox.Image.Clone());
-                imgOriginal = (Image)imgPicBox.Image.Clone();
-            }
-            imgPicBox.LoadCompleted -= new AsyncCompletedEventHandler(ImageCompleted);
-        }
+        //**********************************************************************************************************************************************************
+        //**TOOLS BUTTONS**
 
         //botoes tools 1
         private void addToolButtons()
@@ -96,7 +59,7 @@ namespace IMAVD1
             this.toolsPanel.Controls.Add(new ChangeBrightnessButton(this));
             this.toolsPanel.Controls.Add(new ChangeContrastButton(this));
             this.toolsPanel.Controls.Add(new ChangeGamaButton(this));
-        
+
         }
         //botoes tools 1
         private void addToolButtonsBasics()
@@ -119,7 +82,164 @@ namespace IMAVD1
         }
 
 
-        //save window
+        //**********************************************************************************************************************************************************
+
+        //**FILE MENU**
+        //metro button File
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            metroContextMenuFile.Show(metroTile1, 0, metroTile1.Height);
+        }
+
+        //file context menu new button
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.imgPicBox.BackColor = Color.White;
+            this.imgPicBox.ImageLocation = null;
+            stackImages.Clear();
+            stackRedoImages.Clear();
+        }
+
+        //file context menu open button 
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string path;
+            OpenFileDialog file = new OpenFileDialog();
+            if (file.ShowDialog() == DialogResult.OK)
+            {
+                stackImages.Clear();
+                stackRedoImages.Clear();
+                imagePath = file.FileName;
+                this.imgPicBox.ImageLocation = imagePath;
+                imgPicBox.LoadCompleted += new AsyncCompletedEventHandler(ImageCompleted);
+                this.fontXUpDown.Maximum = this.imgPicBox.Width;
+                this.fontYUpDown.Maximum = this.imgPicBox.Height;
+                this.imageClick = false;
+
+
+            }
+        }
+
+        //file context menu save button
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            saveImage(this.imgPicBox.Image);
+        }
+
+
+        //file context menu exit button
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Dispose(true);
+        }
+
+        //**********************************************************************************************************************************************************
+
+        //**EDIT MENU**
+        //metro button Edit
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            metroContextMenuEdit.Show(metroTile2, 0, metroTile2.Height);
+        }
+
+        //edit context menu undo button
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (stackImages.Count > 1)
+            {
+                Image currentImage = (Image)stackImages[0].Clone();
+                Image undoImage = (Image)stackImages[1].Clone();
+                stackImages.RemoveAt(0);
+                imgPicBox.Image = (Image)undoImage.Clone();
+                stackRedoImages.Insert(0, (Image)currentImage.Clone());
+                imgOriginal = (Image)imgPicBox.Image.Clone();
+                zoom100toolStripMenuItem.PerformClick();
+                if (stackRedoImages.Count > 0)
+                    redoToolStripMenuItem.Enabled = true;
+            }
+            if (stackImages.Count <= 1)
+            {
+                undoToolStripMenuItem.Enabled = false;
+            }
+        }
+
+        //edit context menu redo button
+        private void redoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (stackRedoImages.Count > 0)
+            {
+                Image currentImage = (Image)stackRedoImages[0].Clone();
+                stackRedoImages.RemoveAt(0);
+                imgPicBox.Image = (Image)currentImage.Clone();
+                stackImages.Insert(0, (Image)currentImage.Clone());
+                imgOriginal = (Image)imgPicBox.Image.Clone();
+                zoom100toolStripMenuItem.PerformClick();
+            }
+            if (stackRedoImages.Count == 0)
+            {
+                undoToolStripMenuItem.Enabled = false;
+            }
+            if (stackImages.Count > 1)
+                toolStripMenuItemUndo.Enabled = true;
+        }
+
+        //edit context menu resize image button
+        private void toolStripMenuItemResizeImage_Click(object sender, EventArgs e)
+        {
+            ResizeForm resizeForm = new ResizeForm(this);
+            resizeForm.Show();
+            resizeForm.StyleManager = this.StyleManager;
+        }
+        
+        //edit context menu pattern button
+        private void patternToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rowsInput.Value = 1;
+            columnsInput.Value = 1;
+            this.valuePickerPanel.Visible = false;
+            this.textGroupBox.Visible = false;
+            this.graphicsGroupBox.Visible = false;
+            this.twoAreasGroupBox.Visible = false;
+            this.fourAreasGoupBox.Visible = false;
+            this.diagonalCropGroupBox.Visible = false;
+            this.patternGroupBox.Visible = true;
+        }
+
+        //**********************************************************************************************************************************************************
+
+        //**SETTINGS MENU**
+        //Theme
+        private void themeCombo_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            switch (themeCombo.SelectedIndex)
+            {
+                case 0:
+                    appStyle.Theme = MetroFramework.MetroThemeStyle.Light;
+                    break;
+                case 1:
+                    appStyle.Theme = MetroFramework.MetroThemeStyle.Dark;
+                    break;
+            }
+}
+        //Color
+        private void colorCombo_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            appStyle.Style = (MetroFramework.MetroColorStyle)Convert.ToInt32(colorCombo.SelectedIndex);
+        }
+        
+
+        //**********************************************************************************************************************************************************
+
+        private void ImageCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+            if (!e.Cancelled && stackImages.Count == 0)
+            {
+                stackImages.Insert(0, (Image)imgPicBox.Image.Clone());
+                imgOriginal = (Image)imgPicBox.Image.Clone();
+            }
+            imgPicBox.LoadCompleted -= new AsyncCompletedEventHandler(ImageCompleted);
+        }
+
         private void saveImage(Image img)
         {
             SaveFileDialog dialog = new SaveFileDialog();
@@ -157,13 +277,7 @@ namespace IMAVD1
             }
 
         }
-
-        //save
-        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            saveImage(this.imgPicBox.Image);
-        }
-
+        
         internal void NewImageStack(Image newImage)
         {
             stackRedoImages.Clear();
@@ -196,47 +310,7 @@ namespace IMAVD1
 
             return prompt.ShowDialog() == DialogResult.OK ? textBox.Text : "";
         }
-
-        //undo
-        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (stackImages.Count > 1)
-            {
-                Image currentImage = (Image)stackImages[0].Clone();
-                Image undoImage = (Image)stackImages[1].Clone();
-                stackImages.RemoveAt(0);
-                imgPicBox.Image = (Image)undoImage.Clone();
-                stackRedoImages.Insert(0, (Image)currentImage.Clone());
-                imgOriginal = (Image)imgPicBox.Image.Clone();
-                zoom100toolStripMenuItem.PerformClick();
-                if (stackRedoImages.Count > 0)
-                    redoToolStripMenuItem.Enabled = true;
-            }
-            if (stackImages.Count <= 1)
-            {
-                undoToolStripMenuItem.Enabled = false;
-            }
-        }
-        //redo
-        private void redoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (stackRedoImages.Count > 0)
-            {
-                Image currentImage = (Image)stackRedoImages[0].Clone();
-                stackRedoImages.RemoveAt(0);
-                imgPicBox.Image = (Image)currentImage.Clone();
-                stackImages.Insert(0, (Image)currentImage.Clone());
-                imgOriginal = (Image)imgPicBox.Image.Clone();
-                zoom100toolStripMenuItem.PerformClick();
-            }
-            if (stackRedoImages.Count == 0)
-            {
-                redoToolStripMenuItem.Enabled = false;
-            }
-            if (stackImages.Count > 1)
-                undoToolStripMenuItem.Enabled = true;
-        }
-
+        
         public void createValuePickerMenu(ToolButton toolButton, string title, string min, string max)
         {
             this.toolButton = toolButton;
@@ -265,7 +339,6 @@ namespace IMAVD1
 
         }
 
-        //zoom scale
         private void Zoom_OnClick(object sender, EventArgs e)
         {
             selectedZoom.Checked = false;
@@ -302,13 +375,7 @@ namespace IMAVD1
             Bitmap bmp = new Bitmap((Image)image.Clone(), newSize);
             imgPicBox.Image = bmp;
         }
-        //exit
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Dispose(true);
-
-        }
-
+       
         private void loadGraphicsImageBtn_Click(object sender, EventArgs e)
         {
             var fileDialog = new OpenFileDialog { Title = "Select Image File", Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif" };
@@ -370,7 +437,7 @@ namespace IMAVD1
                 this.fontNameLbl.Font = this.textFont;
             }
         }
-
+    
         private void chooseFontColorBtn_Click(object sender, EventArgs e)
         {
             ColorDialog colorDialog = new ColorDialog();
@@ -458,7 +525,6 @@ namespace IMAVD1
                        MessageBoxDefaultButton.Button1);
         }
 
-        //resize
         private void resizeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ResizeForm resizeForm = new ResizeForm(this);
@@ -467,27 +533,11 @@ namespace IMAVD1
             resizeForm.StyleManager = appStyle;
         }
 
-        //dividir em 4
         private void fourAreaPicBox1_Click(object sender, EventArgs e)
         {
             saveImage(((PictureBox)sender).Image);
         }
-
-        //pattern
-        private void patternToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            rowsInput.Value = 1;
-            columnsInput.Value = 1;
-            this.valuePickerPanel.Visible = false;
-            this.textGroupBox.Visible = false;
-            this.graphicsGroupBox.Visible = false;
-            this.twoAreasGroupBox.Visible = false;
-            this.fourAreasGoupBox.Visible = false;
-            this.diagonalCropGroupBox.Visible = false;
-            this.patternGroupBox.Visible = true;
-        }
         
-        //Apply pattern
         private void applyPatternButton_Click(object sender, EventArgs e)
         {
             Image picture = (Image)imgPicBox.Image.Clone();
@@ -504,123 +554,9 @@ namespace IMAVD1
             patternGroupBox.Visible = false;
         }
 
-        //cancel pattern
         private void cancelPatternButton_Click(object sender, EventArgs e)
         {
             patternGroupBox.Visible = false;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-       
-        //NEW METRO SHIT
-
-        private void metroTile1_Click(object sender, EventArgs e)
-        {
-            metroContextMenuFile.Show(metroTile1, 0, metroTile1.Height);
-        }
-
-        private void toolStripMenuItem1_Click_1(object sender, EventArgs e)
-        {
-            string path;
-            OpenFileDialog file = new OpenFileDialog();
-            if (file.ShowDialog() == DialogResult.OK)
-            {
-                stackImages.Clear();
-                stackRedoImages.Clear();
-                imagePath = file.FileName;
-                this.imgPicBox.ImageLocation = imagePath;
-                imgPicBox.LoadCompleted += new AsyncCompletedEventHandler(ImageCompleted);
-                //sets coordinate limits to future objects in the image
-                this.fontXUpDown.Maximum = this.imgPicBox.Width;
-                this.fontYUpDown.Maximum = this.imgPicBox.Height;
-                this.imageClick = false;
-
-
-            }
-        }
-
-        private void metroContextMenu1_Opening(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void toolStripMenuItemNew_Click(object sender, EventArgs e)
-        {
-            this.imgPicBox.BackColor = Color.White;
-            this.imgPicBox.ImageLocation = null;
-            stackImages.Clear();
-            stackRedoImages.Clear();
-        }
-
-        private void toolStripMenuItemSave_Click(object sender, EventArgs e)
-        {
-            saveImage(this.imgPicBox.Image);
-        }
-
-        private void toolStripMenuItemExit_Click(object sender, EventArgs e)
-        {
-            this.Dispose(true);
-        }
-
-        private void toolStripMenuItem1_Click_2(object sender, EventArgs e)
-        {
-            if (stackImages.Count > 1)
-            {
-                Image currentImage = (Image)stackImages[0].Clone();
-                Image undoImage = (Image)stackImages[1].Clone();
-                stackImages.RemoveAt(0);
-                imgPicBox.Image = (Image)undoImage.Clone();
-                stackRedoImages.Insert(0, (Image)currentImage.Clone());
-                imgOriginal = (Image)imgPicBox.Image.Clone();
-                zoom100toolStripMenuItem.PerformClick();
-                if (stackRedoImages.Count > 0)
-                    redoToolStripMenuItem.Enabled = true;
-            }
-            if (stackImages.Count <= 1)
-            {
-                undoToolStripMenuItem.Enabled = false;
-            }
-        }
-
-        private void metroTile2_Click(object sender, EventArgs e)
-        {
-            metroContextMenuEdit.Show(metroTile2, 0, metroTile2.Height);
-        }
-
-        private void toolStripMenuItemRedo_Click(object sender, EventArgs e)
-        {
-            if (stackRedoImages.Count > 0)
-            {
-                Image currentImage = (Image)stackRedoImages[0].Clone();
-                stackRedoImages.RemoveAt(0);
-                imgPicBox.Image = (Image)currentImage.Clone();
-                stackImages.Insert(0, (Image)currentImage.Clone());
-                imgOriginal = (Image)imgPicBox.Image.Clone();
-                zoom100toolStripMenuItem.PerformClick();
-            }
-            if (stackRedoImages.Count == 0)
-            {
-                redoToolStripMenuItem.Enabled = false;
-            }
-            if (stackImages.Count > 1)
-                undoToolStripMenuItem.Enabled = true;
-        }
-
-        private void toolStripMenuItemResizeImage_Click(object sender, EventArgs e)
-        {
-            ResizeForm resizeForm = new ResizeForm(this);
-            resizeForm.Show();
-            resizeForm.StyleManager = this.StyleManager;
         }
 
         private void toolStripMenuItemCancelCursor_Click(object sender, EventArgs e)
@@ -628,36 +564,6 @@ namespace IMAVD1
             this.imageClick = false;
             Cursor = Cursors.Default;
         }
-
-        private void toolStripMenuItemPattern_Click(object sender, EventArgs e)
-        {
-            rowsInput.Value = 1;
-            columnsInput.Value = 1;
-            this.valuePickerPanel.Visible = false;
-            this.textGroupBox.Visible = false;
-            this.graphicsGroupBox.Visible = false;
-            this.twoAreasGroupBox.Visible = false;
-            this.fourAreasGoupBox.Visible = false;
-            this.diagonalCropGroupBox.Visible = false;
-            this.patternGroupBox.Visible = true;
-        }
         
-        private void themeCombo_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            switch (themeCombo.SelectedIndex)
-            {
-                case 0:
-                    appStyle.Theme = MetroFramework.MetroThemeStyle.Light;
-                    break;
-                case 1:
-                    appStyle.Theme = MetroFramework.MetroThemeStyle.Dark;
-                    break;
-            }
-        }
-
-        private void colorCombo_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            appStyle.Style = (MetroFramework.MetroColorStyle)Convert.ToInt32(colorCombo.SelectedIndex);
-        }
     }
 }

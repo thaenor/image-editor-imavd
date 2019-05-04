@@ -33,9 +33,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.diagonalCropGroupBox = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.diagonalPicBox2 = new System.Windows.Forms.PictureBox();
+            this.diagonalPicBox1 = new System.Windows.Forms.PictureBox();
             this.toolsPanel = new System.Windows.Forms.TableLayoutPanel();
             this.fourAreasGoupBox = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.fourAreaPicBox4 = new System.Windows.Forms.PictureBox();
+            this.fourAreaPicBox3 = new System.Windows.Forms.PictureBox();
+            this.fourAreaPicBox2 = new System.Windows.Forms.PictureBox();
+            this.fourAreaPicBox1 = new System.Windows.Forms.PictureBox();
             this.patternGroupBox = new System.Windows.Forms.GroupBox();
             this.cancelPatternButton = new System.Windows.Forms.Button();
             this.applyPatternButton = new System.Windows.Forms.Button();
@@ -63,7 +69,9 @@
             this.fontLbl = new System.Windows.Forms.Label();
             this.textBox = new System.Windows.Forms.TextBox();
             this.twoAreasGroupBox = new System.Windows.Forms.GroupBox();
+            this.twoAreaPicBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.twoAreaPicBox2 = new System.Windows.Forms.PictureBox();
             this.graphicsGroupBox = new System.Windows.Forms.GroupBox();
             this.cancelGraphicsBtn = new System.Windows.Forms.Button();
             this.applyGraphicsBtn = new System.Windows.Forms.Button();
@@ -79,13 +87,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.graphicsImageName = new System.Windows.Forms.Label();
             this.loadGraphicsImageBtn = new System.Windows.Forms.Button();
+            this.graphicsPicBox = new System.Windows.Forms.PictureBox();
             this.zoomLabel = new System.Windows.Forms.Label();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.toolsPanelBasic = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.imgPicBox = new System.Windows.Forms.PictureBox();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.colorCombo = new MetroFramework.Controls.MetroComboBox();
             this.themeCombo = new MetroFramework.Controls.MetroComboBox();
@@ -103,8 +114,12 @@
             this.toolStripMenuItemRedo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemResizeImage = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemPattern = new System.Windows.Forms.ToolStripMenuItem();
-            this.fileToolStripMenuItem_ = new System.Windows.Forms.ToolStripMenuItem();
+            this.appStyle = new MetroFramework.Components.MetroStyleManager(this.components);
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.patternToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoom50toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -114,29 +129,20 @@
             this.zoom400toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoom500toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.appStyle = new MetroFramework.Components.MetroStyleManager(this.components);
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.imgPicBox = new System.Windows.Forms.PictureBox();
-            this.diagonalPicBox2 = new System.Windows.Forms.PictureBox();
-            this.diagonalPicBox1 = new System.Windows.Forms.PictureBox();
-            this.fourAreaPicBox4 = new System.Windows.Forms.PictureBox();
-            this.fourAreaPicBox3 = new System.Windows.Forms.PictureBox();
-            this.fourAreaPicBox2 = new System.Windows.Forms.PictureBox();
-            this.fourAreaPicBox1 = new System.Windows.Forms.PictureBox();
-            this.twoAreaPicBox1 = new System.Windows.Forms.PictureBox();
-            this.twoAreaPicBox2 = new System.Windows.Forms.PictureBox();
-            this.graphicsPicBox = new System.Windows.Forms.PictureBox();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.patternToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fileToolStripMenuItem_ = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.diagonalCropGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.diagonalPicBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diagonalPicBox1)).BeginInit();
             this.fourAreasGoupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox1)).BeginInit();
             this.patternGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.columnsInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rowsInput)).BeginInit();
@@ -146,6 +152,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.fontXUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fontYUpDown)).BeginInit();
             this.twoAreasGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox2)).BeginInit();
             this.graphicsGroupBox.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownW)).BeginInit();
@@ -153,24 +161,16 @@
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graphicsPicBox)).BeginInit();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgPicBox)).BeginInit();
             this.metroTabPage2.SuspendLayout();
             this.metroContextMenuFile.SuspendLayout();
             this.metroContextMenuEdit.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appStyle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diagonalPicBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diagonalPicBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graphicsPicBox)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -214,6 +214,30 @@
             this.label11.Size = new System.Drawing.Size(137, 13);
             this.label11.TabIndex = 2;
             this.label11.Text = "Click on the images to save";
+            // 
+            // diagonalPicBox2
+            // 
+            this.diagonalPicBox2.BackColor = System.Drawing.Color.Transparent;
+            this.diagonalPicBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.diagonalPicBox2.Location = new System.Drawing.Point(7, 275);
+            this.diagonalPicBox2.Name = "diagonalPicBox2";
+            this.diagonalPicBox2.Size = new System.Drawing.Size(287, 230);
+            this.diagonalPicBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.diagonalPicBox2.TabIndex = 1;
+            this.diagonalPicBox2.TabStop = false;
+            this.diagonalPicBox2.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
+            // 
+            // diagonalPicBox1
+            // 
+            this.diagonalPicBox1.BackColor = System.Drawing.Color.Transparent;
+            this.diagonalPicBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.diagonalPicBox1.Location = new System.Drawing.Point(7, 39);
+            this.diagonalPicBox1.Name = "diagonalPicBox1";
+            this.diagonalPicBox1.Size = new System.Drawing.Size(287, 230);
+            this.diagonalPicBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.diagonalPicBox1.TabIndex = 0;
+            this.diagonalPicBox1.TabStop = false;
+            this.diagonalPicBox1.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
             // 
             // toolsPanel
             // 
@@ -259,6 +283,50 @@
             this.label7.Size = new System.Drawing.Size(137, 13);
             this.label7.TabIndex = 4;
             this.label7.Text = "Click on the images to save";
+            // 
+            // fourAreaPicBox4
+            // 
+            this.fourAreaPicBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fourAreaPicBox4.Location = new System.Drawing.Point(155, 199);
+            this.fourAreaPicBox4.Name = "fourAreaPicBox4";
+            this.fourAreaPicBox4.Size = new System.Drawing.Size(130, 138);
+            this.fourAreaPicBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fourAreaPicBox4.TabIndex = 3;
+            this.fourAreaPicBox4.TabStop = false;
+            this.fourAreaPicBox4.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
+            // 
+            // fourAreaPicBox3
+            // 
+            this.fourAreaPicBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fourAreaPicBox3.Location = new System.Drawing.Point(8, 199);
+            this.fourAreaPicBox3.Name = "fourAreaPicBox3";
+            this.fourAreaPicBox3.Size = new System.Drawing.Size(130, 138);
+            this.fourAreaPicBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fourAreaPicBox3.TabIndex = 2;
+            this.fourAreaPicBox3.TabStop = false;
+            this.fourAreaPicBox3.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
+            // 
+            // fourAreaPicBox2
+            // 
+            this.fourAreaPicBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fourAreaPicBox2.Location = new System.Drawing.Point(155, 47);
+            this.fourAreaPicBox2.Name = "fourAreaPicBox2";
+            this.fourAreaPicBox2.Size = new System.Drawing.Size(130, 138);
+            this.fourAreaPicBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fourAreaPicBox2.TabIndex = 1;
+            this.fourAreaPicBox2.TabStop = false;
+            this.fourAreaPicBox2.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
+            // 
+            // fourAreaPicBox1
+            // 
+            this.fourAreaPicBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fourAreaPicBox1.Location = new System.Drawing.Point(7, 47);
+            this.fourAreaPicBox1.Name = "fourAreaPicBox1";
+            this.fourAreaPicBox1.Size = new System.Drawing.Size(130, 138);
+            this.fourAreaPicBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fourAreaPicBox1.TabIndex = 0;
+            this.fourAreaPicBox1.TabStop = false;
+            this.fourAreaPicBox1.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
             // 
             // patternGroupBox
             // 
@@ -550,6 +618,17 @@
             this.twoAreasGroupBox.Text = "Two Areas";
             this.twoAreasGroupBox.Visible = false;
             // 
+            // twoAreaPicBox1
+            // 
+            this.twoAreaPicBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.twoAreaPicBox1.Location = new System.Drawing.Point(0, 43);
+            this.twoAreaPicBox1.Name = "twoAreaPicBox1";
+            this.twoAreaPicBox1.Size = new System.Drawing.Size(297, 173);
+            this.twoAreaPicBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.twoAreaPicBox1.TabIndex = 0;
+            this.twoAreaPicBox1.TabStop = false;
+            this.twoAreaPicBox1.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -558,6 +637,17 @@
             this.label8.Size = new System.Drawing.Size(137, 13);
             this.label8.TabIndex = 4;
             this.label8.Text = "Click on the images to save";
+            // 
+            // twoAreaPicBox2
+            // 
+            this.twoAreaPicBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.twoAreaPicBox2.Location = new System.Drawing.Point(0, 222);
+            this.twoAreaPicBox2.Name = "twoAreaPicBox2";
+            this.twoAreaPicBox2.Size = new System.Drawing.Size(296, 173);
+            this.twoAreaPicBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.twoAreaPicBox2.TabIndex = 1;
+            this.twoAreaPicBox2.TabStop = false;
+            this.twoAreaPicBox2.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
             // 
             // graphicsGroupBox
             // 
@@ -724,6 +814,17 @@
             this.loadGraphicsImageBtn.UseVisualStyleBackColor = true;
             this.loadGraphicsImageBtn.Click += new System.EventHandler(this.loadGraphicsImageBtn_Click);
             // 
+            // graphicsPicBox
+            // 
+            this.graphicsPicBox.BackColor = System.Drawing.Color.White;
+            this.graphicsPicBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.graphicsPicBox.Location = new System.Drawing.Point(6, 35);
+            this.graphicsPicBox.Name = "graphicsPicBox";
+            this.graphicsPicBox.Size = new System.Drawing.Size(287, 244);
+            this.graphicsPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.graphicsPicBox.TabIndex = 24;
+            this.graphicsPicBox.TabStop = false;
+            // 
             // zoomLabel
             // 
             this.zoomLabel.AutoSize = true;
@@ -819,6 +920,17 @@
             this.panel2.Size = new System.Drawing.Size(816, 774);
             this.panel2.TabIndex = 3;
             // 
+            // imgPicBox
+            // 
+            this.imgPicBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.imgPicBox.Location = new System.Drawing.Point(-2, -2);
+            this.imgPicBox.Margin = new System.Windows.Forms.Padding(2);
+            this.imgPicBox.Name = "imgPicBox";
+            this.imgPicBox.Size = new System.Drawing.Size(500, 500);
+            this.imgPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.imgPicBox.TabIndex = 0;
+            this.imgPicBox.TabStop = false;
+            // 
             // metroTabPage2
             // 
             this.metroTabPage2.Controls.Add(this.metroLabel2);
@@ -839,6 +951,17 @@
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.ForeColor = System.Drawing.Color.Coral;
+            this.metroLabel2.Location = new System.Drawing.Point(7, 203);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(168, 76);
+            this.metroLabel2.TabIndex = 37;
+            this.metroLabel2.Text = "ISEP - IMAVD 2018/2019\r\nFrancisco Santos - 1100584\r\nMiguel Morgado - 1150605\r\nLuí" +
+    "s Santos - 1170033";
             // 
             // metroLabel1
             // 
@@ -927,7 +1050,7 @@
             this.toolStripMenuItemOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.toolStripMenuItemOpen.Size = new System.Drawing.Size(150, 26);
             this.toolStripMenuItemOpen.Text = "Open";
-            this.toolStripMenuItemOpen.Click += new System.EventHandler(this.toolStripMenuItem1_Click_1);
+            this.toolStripMenuItemOpen.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // metroContextMenuFile
             // 
@@ -944,7 +1067,6 @@
             this.metroContextMenuFile.ShowItemToolTips = false;
             this.metroContextMenuFile.Size = new System.Drawing.Size(151, 108);
             this.metroContextMenuFile.Text = "menu1";
-            this.metroContextMenuFile.Opening += new System.ComponentModel.CancelEventHandler(this.metroContextMenu1_Opening);
             // 
             // toolStripMenuItemNew
             // 
@@ -953,7 +1075,7 @@
             this.toolStripMenuItemNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.toolStripMenuItemNew.Size = new System.Drawing.Size(150, 26);
             this.toolStripMenuItemNew.Text = "New";
-            this.toolStripMenuItemNew.Click += new System.EventHandler(this.toolStripMenuItemNew_Click);
+            this.toolStripMenuItemNew.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // toolStripMenuItemSave
             // 
@@ -962,7 +1084,7 @@
             this.toolStripMenuItemSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.toolStripMenuItemSave.Size = new System.Drawing.Size(150, 26);
             this.toolStripMenuItemSave.Text = "Save";
-            this.toolStripMenuItemSave.Click += new System.EventHandler(this.toolStripMenuItemSave_Click);
+            this.toolStripMenuItemSave.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // toolStripMenuItemExit
             // 
@@ -971,7 +1093,7 @@
             this.toolStripMenuItemExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
             this.toolStripMenuItemExit.Size = new System.Drawing.Size(150, 26);
             this.toolStripMenuItemExit.Text = "Exit";
-            this.toolStripMenuItemExit.Click += new System.EventHandler(this.toolStripMenuItemExit_Click);
+            this.toolStripMenuItemExit.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // metroTile2
             // 
@@ -1004,7 +1126,7 @@
             this.toolStripMenuItemUndo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
             this.toolStripMenuItemUndo.Size = new System.Drawing.Size(187, 26);
             this.toolStripMenuItemUndo.Text = "Undo";
-            this.toolStripMenuItemUndo.Click += new System.EventHandler(this.toolStripMenuItem1_Click_2);
+            this.toolStripMenuItemUndo.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
             // 
             // toolStripMenuItemRedo
             // 
@@ -1015,7 +1137,7 @@
             | System.Windows.Forms.Keys.Z)));
             this.toolStripMenuItemRedo.Size = new System.Drawing.Size(187, 26);
             this.toolStripMenuItemRedo.Text = "Redo";
-            this.toolStripMenuItemRedo.Click += new System.EventHandler(this.toolStripMenuItemRedo_Click);
+            this.toolStripMenuItemRedo.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);
             // 
             // toolStripMenuItemResizeImage
             // 
@@ -1034,18 +1156,11 @@
             | System.Windows.Forms.Keys.P)));
             this.toolStripMenuItemPattern.Size = new System.Drawing.Size(187, 26);
             this.toolStripMenuItemPattern.Text = "Pattern";
-            this.toolStripMenuItemPattern.Click += new System.EventHandler(this.toolStripMenuItemPattern_Click);
+            this.toolStripMenuItemPattern.Click += new System.EventHandler(this.patternToolStripMenuItem_Click);
             // 
-            // fileToolStripMenuItem_
+            // appStyle
             // 
-            this.fileToolStripMenuItem_.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem,
-            this.openToolStripMenuItem,
-            this.saveToolStripMenuItem,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem_.Name = "fileToolStripMenuItem_";
-            this.fileToolStripMenuItem_.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem_.Text = "File";
+            this.appStyle.Owner = this;
             // 
             // editToolStripMenuItem
             // 
@@ -1057,6 +1172,42 @@
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Enabled = false;
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.undoToolStripMenuItem.Text = "Undo";
+            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
+            // 
+            // redoToolStripMenuItem
+            // 
+            this.redoToolStripMenuItem.Enabled = false;
+            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.Z)));
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.redoToolStripMenuItem.Text = "Redo";
+            this.redoToolStripMenuItem.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);
+            // 
+            // resizeToolStripMenuItem
+            // 
+            this.resizeToolStripMenuItem.Name = "resizeToolStripMenuItem";
+            this.resizeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
+            this.resizeToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.resizeToolStripMenuItem.Text = "Resize Image";
+            this.resizeToolStripMenuItem.Click += new System.EventHandler(this.resizeToolStripMenuItem_Click);
+            // 
+            // patternToolStripMenuItem
+            // 
+            this.patternToolStripMenuItem.Name = "patternToolStripMenuItem";
+            this.patternToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.P)));
+            this.patternToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.patternToolStripMenuItem.Text = "Pattern";
+            this.patternToolStripMenuItem.Click += new System.EventHandler(this.patternToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
@@ -1131,215 +1282,56 @@
             this.fileToolStripMenuItem_,
             this.editToolStripMenuItem,
             this.viewToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(259, 63);
+            this.menuStrip1.Location = new System.Drawing.Point(176, 83);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(126, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(246, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // appStyle
-            // 
-            this.appStyle.Owner = this;
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.ForeColor = System.Drawing.Color.Coral;
-            this.metroLabel2.Location = new System.Drawing.Point(7, 203);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(168, 76);
-            this.metroLabel2.TabIndex = 37;
-            this.metroLabel2.Text = "ISEP - IMAVD 2018/2019\r\nFrancisco Santos - 1100584\r\nMiguel Morgado - 1150605\r\nLuí" +
-    "s Santos - 1170033";
-            // 
-            // imgPicBox
-            // 
-            this.imgPicBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.imgPicBox.Location = new System.Drawing.Point(-2, -2);
-            this.imgPicBox.Margin = new System.Windows.Forms.Padding(2);
-            this.imgPicBox.Name = "imgPicBox";
-            this.imgPicBox.Size = new System.Drawing.Size(500, 500);
-            this.imgPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imgPicBox.TabIndex = 0;
-            this.imgPicBox.TabStop = false;
-            // 
-            // diagonalPicBox2
-            // 
-            this.diagonalPicBox2.BackColor = System.Drawing.Color.Transparent;
-            this.diagonalPicBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.diagonalPicBox2.Location = new System.Drawing.Point(7, 275);
-            this.diagonalPicBox2.Name = "diagonalPicBox2";
-            this.diagonalPicBox2.Size = new System.Drawing.Size(287, 230);
-            this.diagonalPicBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.diagonalPicBox2.TabIndex = 1;
-            this.diagonalPicBox2.TabStop = false;
-            this.diagonalPicBox2.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
-            // 
-            // diagonalPicBox1
-            // 
-            this.diagonalPicBox1.BackColor = System.Drawing.Color.Transparent;
-            this.diagonalPicBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.diagonalPicBox1.Location = new System.Drawing.Point(7, 39);
-            this.diagonalPicBox1.Name = "diagonalPicBox1";
-            this.diagonalPicBox1.Size = new System.Drawing.Size(287, 230);
-            this.diagonalPicBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.diagonalPicBox1.TabIndex = 0;
-            this.diagonalPicBox1.TabStop = false;
-            this.diagonalPicBox1.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
-            // 
-            // fourAreaPicBox4
-            // 
-            this.fourAreaPicBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fourAreaPicBox4.Location = new System.Drawing.Point(155, 199);
-            this.fourAreaPicBox4.Name = "fourAreaPicBox4";
-            this.fourAreaPicBox4.Size = new System.Drawing.Size(130, 138);
-            this.fourAreaPicBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fourAreaPicBox4.TabIndex = 3;
-            this.fourAreaPicBox4.TabStop = false;
-            this.fourAreaPicBox4.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
-            // 
-            // fourAreaPicBox3
-            // 
-            this.fourAreaPicBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fourAreaPicBox3.Location = new System.Drawing.Point(8, 199);
-            this.fourAreaPicBox3.Name = "fourAreaPicBox3";
-            this.fourAreaPicBox3.Size = new System.Drawing.Size(130, 138);
-            this.fourAreaPicBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fourAreaPicBox3.TabIndex = 2;
-            this.fourAreaPicBox3.TabStop = false;
-            this.fourAreaPicBox3.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
-            // 
-            // fourAreaPicBox2
-            // 
-            this.fourAreaPicBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fourAreaPicBox2.Location = new System.Drawing.Point(155, 47);
-            this.fourAreaPicBox2.Name = "fourAreaPicBox2";
-            this.fourAreaPicBox2.Size = new System.Drawing.Size(130, 138);
-            this.fourAreaPicBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fourAreaPicBox2.TabIndex = 1;
-            this.fourAreaPicBox2.TabStop = false;
-            this.fourAreaPicBox2.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
-            // 
-            // fourAreaPicBox1
-            // 
-            this.fourAreaPicBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fourAreaPicBox1.Location = new System.Drawing.Point(7, 47);
-            this.fourAreaPicBox1.Name = "fourAreaPicBox1";
-            this.fourAreaPicBox1.Size = new System.Drawing.Size(130, 138);
-            this.fourAreaPicBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fourAreaPicBox1.TabIndex = 0;
-            this.fourAreaPicBox1.TabStop = false;
-            this.fourAreaPicBox1.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
-            // 
-            // twoAreaPicBox1
-            // 
-            this.twoAreaPicBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.twoAreaPicBox1.Location = new System.Drawing.Point(0, 43);
-            this.twoAreaPicBox1.Name = "twoAreaPicBox1";
-            this.twoAreaPicBox1.Size = new System.Drawing.Size(297, 173);
-            this.twoAreaPicBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.twoAreaPicBox1.TabIndex = 0;
-            this.twoAreaPicBox1.TabStop = false;
-            this.twoAreaPicBox1.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
-            // 
-            // twoAreaPicBox2
-            // 
-            this.twoAreaPicBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.twoAreaPicBox2.Location = new System.Drawing.Point(0, 222);
-            this.twoAreaPicBox2.Name = "twoAreaPicBox2";
-            this.twoAreaPicBox2.Size = new System.Drawing.Size(296, 173);
-            this.twoAreaPicBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.twoAreaPicBox2.TabIndex = 1;
-            this.twoAreaPicBox2.TabStop = false;
-            this.twoAreaPicBox2.Click += new System.EventHandler(this.fourAreaPicBox1_Click);
-            // 
-            // graphicsPicBox
-            // 
-            this.graphicsPicBox.BackColor = System.Drawing.Color.White;
-            this.graphicsPicBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.graphicsPicBox.Location = new System.Drawing.Point(6, 35);
-            this.graphicsPicBox.Name = "graphicsPicBox";
-            this.graphicsPicBox.Size = new System.Drawing.Size(287, 244);
-            this.graphicsPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.graphicsPicBox.TabIndex = 24;
-            this.graphicsPicBox.TabStop = false;
+            this.menuStrip1.Visible = false;
             // 
             // newToolStripMenuItem
             // 
-            this.newToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.new_file;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
-            this.openToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.open_file;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
-            this.saveToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.save_file;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.exit;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // undoToolStripMenuItem
+            // fileToolStripMenuItem_
             // 
-            this.undoToolStripMenuItem.Enabled = false;
-            this.undoToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.undo;
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
-            this.undoToolStripMenuItem.Text = "Undo";
-            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
-            // 
-            // redoToolStripMenuItem
-            // 
-            this.redoToolStripMenuItem.Enabled = false;
-            this.redoToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.redo;
-            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.Z)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
-            this.redoToolStripMenuItem.Text = "Redo";
-            this.redoToolStripMenuItem.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);
-            // 
-            // resizeToolStripMenuItem
-            // 
-            this.resizeToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.resize;
-            this.resizeToolStripMenuItem.Name = "resizeToolStripMenuItem";
-            this.resizeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.resizeToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
-            this.resizeToolStripMenuItem.Text = "Resize Image";
-            this.resizeToolStripMenuItem.Click += new System.EventHandler(this.resizeToolStripMenuItem_Click);
-            // 
-            // patternToolStripMenuItem
-            // 
-            this.patternToolStripMenuItem.Image = global::IMAVD1.Properties.Resources.pattern;
-            this.patternToolStripMenuItem.Name = "patternToolStripMenuItem";
-            this.patternToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.P)));
-            this.patternToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
-            this.patternToolStripMenuItem.Text = "Pattern";
-            this.patternToolStripMenuItem.Click += new System.EventHandler(this.patternToolStripMenuItem_Click);
+            this.fileToolStripMenuItem_.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newToolStripMenuItem,
+            this.openToolStripMenuItem,
+            this.saveToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem_.Name = "fileToolStripMenuItem_";
+            this.fileToolStripMenuItem_.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem_.Text = "File";
             // 
             // Form1
             // 
@@ -1361,8 +1353,14 @@
             this.panel1.ResumeLayout(false);
             this.diagonalCropGroupBox.ResumeLayout(false);
             this.diagonalCropGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.diagonalPicBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diagonalPicBox1)).EndInit();
             this.fourAreasGoupBox.ResumeLayout(false);
             this.fourAreasGoupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox1)).EndInit();
             this.patternGroupBox.ResumeLayout(false);
             this.patternGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.columnsInput)).EndInit();
@@ -1377,6 +1375,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.fontYUpDown)).EndInit();
             this.twoAreasGroupBox.ResumeLayout(false);
             this.twoAreasGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox2)).EndInit();
             this.graphicsGroupBox.ResumeLayout(false);
             this.graphicsGroupBox.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -1387,28 +1387,20 @@
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graphicsPicBox)).EndInit();
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgPicBox)).EndInit();
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage2.PerformLayout();
             this.metroContextMenuFile.ResumeLayout(false);
             this.metroContextMenuEdit.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.appStyle)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.appStyle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diagonalPicBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diagonalPicBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fourAreaPicBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.twoAreaPicBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graphicsPicBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1491,11 +1483,16 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemRedo;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemResizeImage;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemPattern;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem_;
-        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private MetroFramework.Controls.MetroComboBox colorCombo;
+        private MetroFramework.Controls.MetroComboBox themeCombo;
+        private MetroFramework.Controls.MetroLabel metroLabel7;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
+        private MetroFramework.Controls.MetroLabel metroLabel6;
+        private MetroFramework.Components.MetroStyleManager appStyle;
+        private System.Windows.Forms.TableLayoutPanel toolsPanelBasic;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
@@ -1509,16 +1506,11 @@
         private System.Windows.Forms.ToolStripMenuItem zoom200toolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zoom400toolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zoom500toolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private MetroFramework.Controls.MetroComboBox colorCombo;
-        private MetroFramework.Controls.MetroComboBox themeCombo;
-        private MetroFramework.Controls.MetroLabel metroLabel7;
-        private MetroFramework.Controls.MetroLabel metroLabel5;
-        private MetroFramework.Controls.MetroLabel metroLabel6;
-        private MetroFramework.Components.MetroStyleManager appStyle;
-        private System.Windows.Forms.TableLayoutPanel toolsPanelBasic;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem_;
+        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 
