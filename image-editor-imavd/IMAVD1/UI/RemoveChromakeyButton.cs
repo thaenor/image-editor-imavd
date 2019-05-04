@@ -53,6 +53,7 @@ namespace IMAVD1.UI
                 }
             }
             form.NewImageStack(img);
+            form.imgPicBox.BackColor = Color.Transparent;
 
             this.form.imgPicBox.MouseClick -= new MouseEventHandler(imageMouseClick);
             this.form.Cursor = Cursors.Default;
