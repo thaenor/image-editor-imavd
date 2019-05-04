@@ -588,6 +588,10 @@ namespace IMAVD1
             this.imageClick = false;
             Cursor = Cursors.Default;
         }
-        
+
+        private void metroTabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
