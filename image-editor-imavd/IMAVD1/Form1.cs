@@ -641,12 +641,7 @@ namespace IMAVD1
             this.diagonalCropGroupBox.Visible = false;
             this.patternGroupBox.Visible = true;
         }
-
-        private void metroTile3_Click(object sender, EventArgs e)
-        {
-            
-        }
-
+        
         private void themeCombo_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             switch (themeCombo.SelectedIndex)
